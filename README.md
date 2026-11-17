@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://fabiano-couto.github.io/TPM-PROJETO/"><strong>Página oficial de download</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/Fabiano-Couto/TPM-PROJETO/releases/latest"><strong>Baixar instalador (v0.1.0)</strong></a>
+  <a href="https://github.com/Fabiano-Couto/TPM-PROJETO/releases/latest"><strong>Baixar instalador (v0.2.0)</strong></a>
   &nbsp;·&nbsp;
   <a href="#verificação-de-integridade-sha-256"><strong>Conferir SHA-256</strong></a>
 </p>
@@ -39,7 +39,12 @@ Baixe o instalador da versão atual pela página oficial ou em [**Releases**](ht
 
 | Versão | Arquivo | Tamanho |
 |---|---|---|
-| **v0.1.0** | `tpm-projeto-amd64-installer.exe` | 26.522.083 bytes |
+| **v0.2.0** | `tpm-projeto-amd64-installer.exe` | 26.559.799 bytes |
+
+### Novidades na v0.2.0
+
+- Botão **Me pague um café** na barra superior do aplicativo: abre um QR Code Pix (chave CNPJ `67.712.619/0001-06`, sem valor fixo) e opção **Pix Copia e Cola**.
+- Lembrete discreto ao compartilhar um site (nunca impede nem atrasa o compartilhamento), com opção **Já apoiei / não mostrar mais** salva localmente.
 
 ### Sobre o aviso do Windows (SmartScreen)
 
@@ -62,7 +67,7 @@ Get-FileHash .\tpm-projeto-amd64-installer.exe -Algorithm SHA256
 Confira se o valor gerado é idêntico a:
 
 ```text
-DF9CEC42135CF27C260E5B45E5F0622E72C8E5DA3A49C2ECBD8F9FB4E1A7DDE5
+160FB989A3E2AB61AE44194A01227151B5560342B1B9511AEE70A9FE9839757E
 ```
 
 ## Requisitos
