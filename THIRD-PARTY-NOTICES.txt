@@ -1,5 +1,5 @@
-AVISOS DE TERCEIROS — TunelParaMeuProjeto
-===========================================
+AVISOS DE TERCEIROS — TPM-PROJETO
+=================================
 
 Este pacote inclui o executável oficial `cloudflared` (Cloudflare Tunnel client),
 sem modificações, verificado pelo hash SHA-256 em tempo de empacotamento e execução.

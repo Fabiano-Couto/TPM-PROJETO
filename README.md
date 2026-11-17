@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/appicon.png" alt="Ícone do TunelParaMeuProjeto" width="96" height="96" />
+  <img src="assets/appicon.png" alt="Ícone do TPM-PROJETO" width="96" height="96" />
 </p>
 
-<h1 align="center">TunelParaMeuProjeto</h1>
+<h1 align="center">TPM-PROJETO</h1>
 
 <p align="center">
   Compartilhe um site do <strong>Laragon</strong> (ou servidor local) com qualquer pessoa pela internet através de um link temporário protegido por código numérico — sem configurar roteador, sem conta e sem linha de comando.
@@ -39,7 +39,7 @@ Baixe o instalador da versão atual pela página oficial ou em [**Releases**](ht
 
 | Versão | Arquivo | Tamanho |
 |---|---|---|
-| **v0.1.0** | `tunelparameuprojeto-amd64-installer.exe` | 26.522.029 bytes |
+| **v0.1.0** | `tpm-projeto-amd64-installer.exe` | 26.522.083 bytes |
 
 ### Sobre o aviso do Windows (SmartScreen)
 
@@ -49,20 +49,20 @@ Para confirmar a autenticidade antes de executar:
 
 1. Confira o código **SHA-256** do arquivo baixado (comando abaixo).
 2. Se bater exatamente, clique em **Mais informações** → **Executar assim mesmo**.
-3. O instalador instala apenas na sua conta de usuário (`%LOCALAPPDATA%\Programs\TunelParaMeuProjeto`) sem pedir permissão de administrador.
+3. O instalador instala apenas na sua conta de usuário (`%LOCALAPPDATA%\Programs\TPM-PROJETO`) sem pedir permissão de administrador.
 
 ## Verificação de integridade (SHA-256)
 
 No **PowerShell**, na pasta onde salvou o arquivo:
 
 ```powershell
-Get-FileHash .\tunelparameuprojeto-amd64-installer.exe -Algorithm SHA256
+Get-FileHash .\tpm-projeto-amd64-installer.exe -Algorithm SHA256
 ```
 
 Confira se o valor gerado é idêntico a:
 
 ```text
-415BA25500577FAFCC629B0DAAD94AA734808E1C31AEB0C0E9002E40F2D33109
+DF9CEC42135CF27C260E5B45E5F0622E72C8E5DA3A49C2ECBD8F9FB4E1A7DDE5
 ```
 
 ## Requisitos
