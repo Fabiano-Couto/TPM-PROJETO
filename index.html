@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TunelParaMeuProjeto — Compartilhe sites locais com link temporário e código</title>
+  <meta name="description" content="Aplicativo para Windows que compartilha projetos do Laragon ou localhost pela internet com código numérico de 6 dígitos e prazo para expirar. Instalação sem administrador." />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/appicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+  <span id="copy-status" class="sr-only" role="status" aria-live="polite"></span>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#topo">
+        <img src="assets/appicon.png" alt="" width="32" height="32" class="brand-icon" />
+        <span class="brand-name">TunelParaMeuProjeto</span>
+      </a>
+      <nav aria-label="Navegação principal" class="header-nav">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#protecao">Proteção</a>
+        <a href="#verificar">Verificar arquivo</a>
+        <a class="nav-cta" href="https://github.com/Fabiano-Couto/TPM-PROJETO/releases/download/v0.1.0/tunelparameuprojeto-amd64-installer.exe">
+          <span>Baixar v0.1.0</span>
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 2.5v7.25m0 0L4.75 6.5M8 9.75l3.25-3.25M3 13h10" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section id="topo" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="version-line">
+            <span class="status-pill"><span class="status-dot" aria-hidden="true"></span>Windows 10 e 11 · 64 bits</span>
+            <span class="version-text">Versão 0.1.0 · Sem administrador</span>
+          </p>
+          <h1>Mostre seu site local sem expor o computador.</h1>
+          <p class="lead">
+            Escolha um projeto do Laragon ou qualquer porta local. O visitante abre pelo celular ou notebook usando um link público temporário e um código de 6 dígitos — e cai automaticamente quando o tempo acaba.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://github.com/Fabiano-Couto/TPM-PROJETO/releases/download/v0.1.0/tunelparameuprojeto-amd64-installer.exe">
+              <span>Baixar instalador (.exe)</span>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 16 16" fill="none">
+                <path d="M8 2.5v7.25m0 0L4.75 6.5M8 9.75l3.25-3.25M3 13h10" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="btn btn-secondary" href="#verificar">Conferir SHA-256</a>
+          </div>
+
+          <p class="download-meta">
+            <span>25,3 MB (26.522.029 bytes)</span>
+            <span aria-hidden="true">·</span>
+            <span>Inclui cloudflared 2026.10.7</span>
+            <span aria-hidden="true">·</span>
+            <a href="https://github.com/Fabiano-Couto/TPM-PROJETO/releases" rel="noopener noreferrer">Notas de lançamento</a>
+          </p>
+        </div>
+
+        <div class="hero-visual" aria-label="Prévia da janela do aplicativo e da tela de código no celular">
+          <div class="showcase-shell">
+            <article class="app-mock" aria-label="Cartão de compartilhamento ativo no aplicativo">
+              <div class="app-mock-bar">
+                <span class="app-mock-title">
+                  <img src="assets/appicon-no-ar.png" alt="" width="20" height="20" />
+                  TunelParaMeuProjeto
+                </span>
+                <span class="app-mock-badge">
+                  <span class="live-dot" aria-hidden="true"></span>
+                  No ar
+                </span>
+              </div>
+              <div class="app-mock-body">
+                <div class="app-mock-head">
+                  <div>
+                    <strong class="mock-site-name">estetica-automotiva</strong>
+                    <span class="mock-site-host">estetica-automotiva.test</span>
+                  </div>
+                  <span class="mock-timer">até 23:45 · faltam 58 min</span>
+                </div>
+                <div class="mock-row">
+                  <span class="mock-label">Link</span>
+                  <span class="mock-value mock-mono">https://demo-site.trycloudflare.com</span>
+                </div>
+                <div class="mock-row">
+                  <span class="mock-label">Código</span>
+                  <span class="mock-value mock-code">2 6 1 4 6 3</span>
+                </div>
+                <div class="mock-footer">
+                  <span class="mock-pill mock-pill-primary">Copiar mensagem</span>
+                  <span class="mock-footer-right">
+                    <span class="mock-pill">Estender</span>
+                    <span class="mock-pill">Parar</span>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <aside class="phone-mock" aria-label="Tela do código vista pelo visitante no celular">
+              <div class="phone-header">
+                <strong>estetica-automotiva</strong>
+                <span>Disponível até 23:45 (UTC-03)</span>
+              </div>
+              <div class="phone-field">
+                <span>Código de 6 números</span>
+                <div class="phone-input">••••••</div>
+              </div>
+              <div class="phone-btn">Entrar</div>
+              <p class="phone-hint">Teclado numérico automático · cookies necessários</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="section-band">
+      <div class="container">
+        <div class="section-head">
+          <h2>Do site local ao celular do cliente em três passos</h2>
+          <p>Sem abrir portas no roteador, sem editar arquivos do Laragon e sem ensinar comandos para quem vai testar.</p>
+        </div>
+
+        <ol class="steps-list">
+          <li class="step-item">
+            <span class="step-num" aria-hidden="true">1</span>
+            <div class="step-content">
+              <h3>Escolha o site do Laragon ou porta local</h3>
+              <p>O aplicativo descobre a pasta do Laragon automaticamente, lista os sites do Apache ou Nginx (ignorando a página padrão) e também aceita qualquer servidor em execução em <code>localhost:porta</code>.</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <span class="step-num" aria-hidden="true">2</span>
+            <div class="step-content">
+              <h3>Copie a mensagem pronta com 1 clique</h3>
+              <p>O botão <strong>Copiar mensagem</strong> entrega texto pronto com link, código de 6 dígitos e horário de término — você envia pelo canal que preferir, sem o app tentar abrir nada sozinho.</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <span class="step-num" aria-hidden="true">3</span>
+            <div class="step-content">
+              <h3>Controle total até encerrar</h3>
+              <p>Faltando 5 minutos, um aviso no Windows permite estender com <strong>+30 min</strong> sem trocar o link. Se precisar revogar antes, <strong>Trocar código</strong> ou <strong>Parar</strong> derruba quem entrou na hora.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="protecao" class="section-ledger">
+      <div class="container">
+        <div class="section-head">
+          <h2>O que protege seu ambiente enquanto o link está no ar</h2>
+          <p>Cada compartilhamento cria seu próprio porteiro em memória, isolado da rede local e das ferramentas de banco.</p>
+        </div>
+
+        <dl class="spec-ledger">
+          <div class="spec-row">
+            <dt>Porteiro por compartilhamento</dt>
+            <dd>Cada link recebe código criptográfico exclusivo de 6 dígitos. Nem um clique errado na pasta raiz consegue responder por outro link.</dd>
+          </div>
+          <div class="spec-row">
+            <dt>Banco e arquivos sensíveis bloqueados</dt>
+            <dd>Pedidos para <code>phpMyAdmin</code>, <code>Adminer</code>, <code>Redis</code>, <code>Memcached</code>, <code>.env</code>, <code>Telescope</code>, <code>Horizon</code> e caminhos ocultos são recusados antes de chegar ao seu servidor local.</dd>
+          </div>
+          <div class="spec-row">
+            <dt>Limite de erros e aviso no Windows</dt>
+            <dd>5 códigos errados bloqueiam o visitante por 15 minutos; você pode liberá-lo com 1 clique pelo aviso do Windows. Ao chegar a 30 erros totais, só um código novo reabre.</dd>
+          </div>
+          <div class="spec-row">
+            <dt>Avisos antes de publicar</dt>
+            <dd>Detecta se a página usa Vite em dev, links presos a <code>http://localhost</code>, Laravel Debugbar ou tela de erro detalhada e avisa antes do envio.</dd>
+          </div>
+          <div class="spec-row">
+            <dt>Sem rastros ao desinstalar</dt>
+            <dd>Nunca grava configurações no Laragon nem nos seus projetos. Ao fechar ou desinstalar, processos, atalhos, arquivos temporários e chaves de notificação somem limpos.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="verificar" class="section-verify">
+      <div class="container verify-grid">
+        <div class="verify-card">
+          <h2>Conferência de integridade (SHA-256)</h2>
+          <p>
+            Confirme que o instalador baixado é exatamente o compilado nesta versão. Abra o <strong>PowerShell</strong> na pasta de downloads e compare o hash abaixo:
+          </p>
+
+          <div class="hash-block">
+            <div class="hash-row">
+              <span class="hash-label">SHA-256 oficial (v0.1.0)</span>
+              <button type="button" class="copy-btn" data-copy="415BA25500577FAFCC629B0DAAD94AA734808E1C31AEB0C0E9002E40F2D33109" data-label="SHA-256">
+                <span class="copy-btn-text">Copiar hash</span>
+              </button>
+            </div>
+            <code class="hash-code">415BA25500577FAFCC629B0DAAD94AA734808E1C31AEB0C0E9002E40F2D33109</code>
+          </div>
+
+          <div class="hash-block">
+            <div class="hash-row">
+              <span class="hash-label">Comando no PowerShell</span>
+              <button type="button" class="copy-btn" data-copy="Get-FileHash .\tunelparameuprojeto-amd64-installer.exe -Algorithm SHA256" data-label="Comando PowerShell">
+                <span class="copy-btn-text">Copiar comando</span>
+              </button>
+            </div>
+            <code class="hash-code">Get-FileHash .\tunelparameuprojeto-amd64-installer.exe -Algorithm SHA256</code>
+          </div>
+        </div>
+
+        <aside class="smartscreen-card">
+          <h2>Por que o Windows pode mostrar aviso azul?</h2>
+          <p>
+            Esta versão ainda não possui certificado digital comercial de assinatura de código. Ao abrir o arquivo baixado da internet, o <strong>Microsoft Defender SmartScreen</strong> pode exibir <em>“O Windows protegeu o computador”</em>.
+          </p>
+          <ol class="smartscreen-steps">
+            <li>Compare o <strong>SHA-256</strong> ao lado com o arquivo que você baixou.</li>
+            <li>Com os dois códigos iguais, clique em <strong>Mais informações</strong> na janela azul.</li>
+            <li>Clique em <strong>Executar assim mesmo</strong> — o instalador instala só para o seu usuário, sem pedir administrador.</li>
+          </ol>
+          <p class="smartscreen-req">
+            <strong>Requisitos:</strong> Windows 10 ou 11 (64 bits) e Laragon ou servidor HTTP local.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/appicon.png" alt="" width="24" height="24" />
+        <span><strong>TunelParaMeuProjeto</strong> · Versão 0.1.0</span>
+      </div>
+      <p class="footer-license">
+        Inclui o binário oficial <strong>cloudflared 2026.10.7</strong> (Cloudflare, Inc.) verificado por SHA-256 sob a licença
+        <a href="https://www.apache.org/licenses/LICENSE-2.0" rel="noopener noreferrer">Apache-2.0</a>.
+        &nbsp;·&nbsp;
+        <a href="https://github.com/Fabiano-Couto/TPM-PROJETO/blob/main/THIRD-PARTY-NOTICES.txt" rel="noopener noreferrer">Avisos de terceiros</a>
+        &nbsp;·&nbsp;
+        <a href="https://github.com/Fabiano-Couto/TPM-PROJETO" rel="noopener noreferrer">Repositório de downloads</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
