@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://fabiano-couto.github.io/TPM-PROJETO/"><strong>Página oficial de download</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/Fabiano-Couto/TPM-PROJETO/releases/latest"><strong>Baixar instalador (v0.2.0)</strong></a>
+  <a href="https://github.com/Fabiano-Couto/TPM-PROJETO/releases/latest"><strong>Baixar instalador (v0.3.0)</strong></a>
   &nbsp;·&nbsp;
   <a href="#verificação-de-integridade-sha-256"><strong>Conferir SHA-256</strong></a>
 </p>
@@ -39,11 +39,18 @@ Baixe o instalador da versão atual pela página oficial ou em [**Releases**](ht
 
 | Versão | Arquivo | Tamanho |
 |---|---|---|
-| **v0.2.0** | `tpm-projeto-amd64-installer.exe` | 26.559.799 bytes |
+| **v0.3.0** | `tpm-projeto-amd64-installer.exe` | 26.563.501 bytes |
+
+### Novidades na v0.3.0
+
+- **Indicador ao vivo no cartão:** mostra se o link está em **Aguardando acesso**, **Em uso agora** ou **Inativo há X min** (apenas em memória, sem gravar histórico).
+- **Janela fixa ampla com Maximizar:** abre em tamanho fixo compatível (`1040×740`, ajustado à tela) evitando redimensionamento acidental pelas bordas e mantendo o botão nativo **Maximizar**.
+- **Modal amplo na bandeja:** confirmações de **Parar tudo** e **Sair** (quando há links no ar) agora abrem em modal retangular amplo dentro da janela principal.
+- **Correção da chave Pix:** QR Code e cópia atualizados no botão **Me pague um café** para o CNPJ `67.712.619/0001-08` (recebedor `TPM PROJETO`, valor livre).
 
 ### Novidades na v0.2.0
 
-- Botão **Me pague um café** na barra superior do aplicativo: abre um QR Code Pix (chave CNPJ `67.712.619/0001-06`, sem valor fixo) e opção **Pix Copia e Cola**.
+- Botão **Me pague um café** na barra superior do aplicativo: abre um QR Code Pix (chave CNPJ `67.712.619/0001-08`, sem valor fixo) e opção **Pix Copia e Cola**.
 - Lembrete discreto ao compartilhar um site (nunca impede nem atrasa o compartilhamento), com opção **Já apoiei / não mostrar mais** salva localmente.
 
 ### Sobre o aviso do Windows (SmartScreen)
@@ -67,7 +74,7 @@ Get-FileHash .\tpm-projeto-amd64-installer.exe -Algorithm SHA256
 Confira se o valor gerado é idêntico a:
 
 ```text
-160FB989A3E2AB61AE44194A01227151B5560342B1B9511AEE70A9FE9839757E
+6F231F5EC94BD197BA28C11AAE12595824102C9C3585CFDA6A3DE9253108E54B
 ```
 
 ## Requisitos
