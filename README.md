@@ -5,7 +5,11 @@
 <h1 align="center">TPM-PROJETO</h1>
 
 <p align="center">
-  Mostre seus projetos locais em desenvolvimento (<strong>Laragon</strong> ou qualquer porta local) com segurança para qualquer pessoa fora da sua rede testar, avaliar e enviar sugestões — por meio de um link temporário protegido por código numérico e indicador de acesso ao vivo, sem configurar roteador, sem conta e sem subir para servidor.
+  <strong>Mostre seus projetos locais com segurança para alguém fora da sua rede.</strong>
+</p>
+
+<p align="center">
+  Demonstre um projeto específico em desenvolvimento no <strong>Laragon</strong> ou em qualquer porta local para que colegas, parceiros ou clientes possam testar, avaliar e enviar sugestões — por meio de um link temporário protegido por código numérico e indicador de acesso ao vivo, sem subir para servidor, sem abrir portas no roteador e sem expor os outros projetos da sua máquina.
 </p>
 
 <p align="center">
@@ -18,13 +22,17 @@
 
 ---
 
-## Como funciona na prática
+## Do seu projeto local para qualquer um, em qualquer lugar
 
-1. **Escolha o site local** — lista automaticamente seus projetos do Laragon (Apache ou Nginx), sem expor a página padrão, ou aceite qualquer servidor local em execução (ex.: `localhost:3000`).
-2. **Defina duração e compartilhe** — em segundos você recebe um link público (`https://…trycloudflare.com`), um código numérico de 6 dígitos e o botão **Copiar mensagem** pronto para enviar ao cliente ou colega.
-3. **Acesso protegido até o horário** — sem o código, nada chega ao seu computador. Ao terminar o prazo (ou ao clicar em **Parar**), quem estava navegando cai na hora e o túnel encerra sozinho.
+Ideal para validar uma funcionalidade antes do deploy, demonstrar um projeto específico em desenvolvimento e receber avaliações ou sugestões sem expor o restante do seu ambiente.
 
-## Proteções incluídas
+1. **Escolha apenas o projeto que quer demonstrar** — selecione um projeto do Laragon (Apache ou Nginx, ignorando a página padrão) ou informe qualquer servidor em execução em `localhost:porta`. Somente o projeto escolhido é compartilhado; o restante do seu ambiente continua fechado.
+2. **Envie o acesso para quem vai avaliar** — em segundos você recebe um link público temporário (`https://…trycloudflare.com`), um código numérico de 6 dígitos e o botão **Copiar mensagem** pronto para enviar a quem vai testar o projeto de qualquer lugar e mandar sugestões.
+3. **Saiba ao vivo quando estão acessando e encerre na hora** — o cartão mostra em tempo real se o link está **Em uso agora** ou se a pessoa já terminou de avaliar. Precisou de mais tempo para revisar ajustes? Some **+30 min** sem mudar o link, ou clique em **Parar** para encerrar na hora.
+
+## Segurança para demonstrar projetos em desenvolvimento
+
+- **Indicador de acesso ao vivo no cartão** — acompanhe no próprio cartão se quem recebeu o link está navegando no projeto naquele momento (**Em uso agora**) ou há quantos minutos saiu, mantido apenas em memória (sem gravar histórico em disco).
 
 - **Código aleatório de 6 dígitos por link** — gerado com aleatoriedade criptográfica; vários compartilhamentos simultâneos nunca compartilham o mesmo código.
 - **Bloqueio automático de ferramentas sensíveis** — impede acesso externo a `/phpmyadmin`, `/adminer`, `/redis`, `/memcached`, `.env`, rotas de debug (Telescope, Horizon, Pulse, Clockwork) e arquivos ocultos pelo link.
