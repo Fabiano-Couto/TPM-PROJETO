@@ -5,7 +5,7 @@
 <h1 align="center">TPM-PROJETO</h1>
 
 <p align="center">
-  Compartilhe um site do <strong>Laragon</strong> (ou servidor local) com qualquer pessoa pela internet através de um link temporário protegido por código numérico — sem configurar roteador, sem conta e sem linha de comando.
+  Mostre seus projetos locais em desenvolvimento (<strong>Laragon</strong> ou qualquer porta local) com segurança para qualquer pessoa fora da sua rede testar, avaliar e enviar sugestões — por meio de um link temporário protegido por código numérico e indicador de acesso ao vivo, sem configurar roteador, sem conta e sem subir para servidor.
 </p>
 
 <p align="center">

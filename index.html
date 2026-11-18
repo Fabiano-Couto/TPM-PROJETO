@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TPM-PROJETO — Compartilhe sites locais com link temporário e código</title>
-  <meta name="description" content="Aplicativo para Windows que compartilha projetos do Laragon ou localhost pela internet com código numérico de 6 dígitos e prazo para expirar. Instalação sem administrador." />
+  <title>TPM-PROJETO — Mostre seus projetos locais com segurança para alguém fora da sua rede</title>
+  <meta name="description" content="Utilitário para desenvolvedores no Windows: demonstre um projeto em desenvolvimento no Laragon ou localhost para alguém avaliar de fora da sua rede, com link temporário, código de 6 dígitos e indicador de acesso ao vivo." />
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="assets/appicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,9 +44,9 @@
             <span class="status-pill"><span class="status-dot" aria-hidden="true"></span>Windows 10 e 11 · 64 bits</span>
             <span class="version-text">Versão 0.3.0 · Sem administrador</span>
           </p>
-          <h1>Mostre seu site local sem expor o computador.</h1>
+          <h1>Mostre seus projetos locais com segurança para alguém fora da sua rede.</h1>
           <p class="lead">
-            Escolha um projeto do Laragon ou qualquer porta local. O visitante abre pelo celular ou notebook usando um link público temporário e um código de 6 dígitos — e cai automaticamente quando o tempo acaba.
+            Demonstre um projeto específico em desenvolvimento no Laragon ou em qualquer porta local para que colegas, parceiros ou clientes possam testar, avaliar e enviar sugestões — sem precisar subir para servidor, sem abrir portas no roteador e sem expor os outros projetos da sua máquina.
           </p>
 
           <div class="hero-actions">
@@ -89,6 +89,10 @@
                   </div>
                   <span class="mock-timer">até 23:45 · faltam 58 min</span>
                 </div>
+                <div class="mock-live-status">
+                  <span class="live-dot" aria-hidden="true"></span>
+                  <span>Em uso agora · último acesso agora mesmo</span>
+                </div>
                 <div class="mock-row">
                   <span class="mock-label">Link</span>
                   <span class="mock-value mock-mono">https://demo-site.trycloudflare.com</span>
@@ -127,30 +131,30 @@
     <section id="como-funciona" class="section-band">
       <div class="container">
         <div class="section-head">
-          <h2>Do site local ao celular do cliente em três passos</h2>
-          <p>Sem abrir portas no roteador, sem editar arquivos do Laragon e sem ensinar comandos para quem vai testar.</p>
+          <h2>Do seu projeto local para qualquer um, em qualquer lugar</h2>
+          <p>Ideal para validar uma funcionalidade antes do deploy, demonstrar um projeto específico em desenvolvimento e receber avaliações ou sugestões sem expor o restante do seu ambiente.</p>
         </div>
 
         <ol class="steps-list">
           <li class="step-item">
             <span class="step-num" aria-hidden="true">1</span>
             <div class="step-content">
-              <h3>Escolha o site do Laragon ou porta local</h3>
-              <p>O aplicativo descobre a pasta do Laragon automaticamente, lista os sites do Apache ou Nginx (ignorando a página padrão) e também aceita qualquer servidor em execução em <code>localhost:porta</code>.</p>
+              <h3>Escolha apenas o projeto que quer demonstrar</h3>
+              <p>Selecione um projeto do Laragon (Apache ou Nginx) ou informe qualquer servidor em execução em <code>localhost:porta</code>. Somente o projeto escolhido é compartilhado — o restante do seu ambiente continua fechado.</p>
             </div>
           </li>
           <li class="step-item">
             <span class="step-num" aria-hidden="true">2</span>
             <div class="step-content">
-              <h3>Copie a mensagem pronta com 1 clique</h3>
-              <p>O botão <strong>Copiar mensagem</strong> entrega texto pronto com link, código de 6 dígitos e horário de término — você envia pelo canal que preferir, sem o app tentar abrir nada sozinho.</p>
+              <h3>Envie o acesso para quem vai avaliar</h3>
+              <p>Com 1 clique em <strong>Copiar mensagem</strong>, você envia o link temporário, o código de 6 dígitos e o prazo de disponibilidade para a pessoa abrir de qualquer lugar, testar o projeto e mandar sugestões.</p>
             </div>
           </li>
           <li class="step-item">
             <span class="step-num" aria-hidden="true">3</span>
             <div class="step-content">
-              <h3>Controle total até encerrar</h3>
-              <p>Faltando 5 minutos, um aviso no Windows permite estender com <strong>+30 min</strong> sem trocar o link. Se precisar revogar antes, <strong>Trocar código</strong> ou <strong>Parar</strong> derruba quem entrou na hora.</p>
+              <h3>Saiba ao vivo quando estão acessando e encerre na hora</h3>
+              <p>O cartão mostra em tempo real se o link está <strong>Em uso agora</strong> ou se a pessoa já terminou de avaliar. Precisou de mais tempo para revisar ajustes? Some <strong>+30 min</strong> sem mudar o link, ou clique em <strong>Parar</strong> para encerrar na hora.</p>
             </div>
           </li>
         </ol>
@@ -160,11 +164,15 @@
     <section id="protecao" class="section-ledger">
       <div class="container">
         <div class="section-head">
-          <h2>O que protege seu ambiente enquanto o link está no ar</h2>
-          <p>Cada compartilhamento cria seu próprio porteiro em memória, isolado da rede local e das ferramentas de banco.</p>
+          <h2>Segurança para demonstrar projetos em desenvolvimento</h2>
+          <p>Cada compartilhamento abre um porteiro exclusivo em memória na frente do projeto escolhido, isolando bancos de dados, variáveis sensíveis e ferramentas locais.</p>
         </div>
 
         <dl class="spec-ledger">
+          <div class="spec-row">
+            <dt>Indicador de acesso ao vivo</dt>
+            <dd>Acompanhe no próprio cartão se quem recebeu o link está navegando no projeto naquele momento (<strong>Em uso agora</strong>) ou há quantos minutos saiu, sem gravar histórico em disco.</dd>
+          </div>
           <div class="spec-row">
             <dt>Porteiro por compartilhamento</dt>
             <dd>Cada link recebe código criptográfico exclusivo de 6 dígitos. Nem um clique errado na pasta raiz consegue responder por outro link.</dd>
